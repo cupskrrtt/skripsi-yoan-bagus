@@ -48,6 +48,16 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "bootstrap": [
+            "composer install",
+            "npm install"
+        ],
+        "build": [
+            "php artisan config:cache",
+            "php artisan route:cache",
+            "php artisan view:cache",
+            "npm run build"
         ]
     },
     "extra": {
