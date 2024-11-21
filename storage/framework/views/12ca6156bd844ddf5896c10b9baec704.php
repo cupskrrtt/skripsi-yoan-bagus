@@ -1,0 +1,1 @@
+<?php /**PATH /home/cup/personal/dev/projects/skripsi-yoan-bagus/resources/views/partials/navbar.blade.php ENDPATH**/ ?>

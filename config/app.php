@@ -85,6 +85,9 @@ return [
 
     'locale' => 'en',
 
+    //YALIPPP
+    'chiper' => 'AES-256-CBC',
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
