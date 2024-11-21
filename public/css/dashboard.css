@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+</style>
+
+body{
+  margin: 0px;
+  background-color: #89a2f5;
+}
+
+/* navigation */
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+ .navigation div .material-symbols-outlined{
+margin-left: 5px;
+margin-right: 5px;
+font-size: 30px;
+color: #727272;
+}
+.navigation div {
+  margin-top: 10px;
+  }
+/* main dashboard */
+/* search */
+.main .notification{
+margin-top: 20px;
+}
+ .main .notification span:nth-child(1){
+  margin-right: 20px;
+  }
+/* main project */
+.main .title{
+  margin-bottom: 30px;
+}
+.main .title h1{
+  font-size: 35px;
+  line-height: 0px;
+}
+.main .title form{
+  margin-top: 40px;
+}
+ .main .title form label{
+  margin-right: 15px;
+  color: #727272;
+  font-size: 16px;
+}
+.main .title form select{
+border: none;
+font-size: 16px;
+background-color: rgba(0 0 0 / 0);
+}
+/* project list */
+ .main .project_list .project h2{
+  font-size: 20px;
+  line-height: 0;
+}
+ .main .project_list .project p{
+color: #727272;
+position: relative;
+top: 10px;
+}
+ .main .project_list .project ul{
+list-style: none;
+position: relative;
+margin-left: 0px;
+padding-left: 0px;
+}
+ .main .project_list .project ul li{
+  position: relative;
+  top: 15px;
+  color: #727272;
+  margin-left: 15px;
+}
+ .main .project_list .project ul li::before{
+content:"\268A";
+position: absolute;
+left : -15px;
+top: 0px;
+}
+ .main .project_list .project {
+  padding: 20px 20px 20px 60px;
+  background-color: wheat;
+  box-shadow: 1px 1px 40px rgba(0 0 0 / 0.01);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.main .project_list .category {
+width: 30px;
+height: 40px;
+background-color: rebeccapurple;
+border-radius: 0px 10px 10px 0px;
+position: absolute;
+left: 0;
+}
+/*chart*/
+.secondary .chart .complete{
+  text-align: center;
+  margin: 40px 0px;
+}
+.secondary .chart .complete h3{
+  line-height: 15px;
+}
+.secondary .chart .complete p{
+  color: #727272;
+  top: 15px;
+}
+.secondary .chart{
+  background-color: wheat;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 30px;
+}
+/* recent project */
+.secondary .recent_project .listing h2{
+  line-height: 0px;
+}
+.secondary .recent_project .listing p{
+  color: #727272;
+}
+.secondary .recent_project .listing {
+  display: flex;
+  justify-content: space-between;
+}
+.secondary .recent_project {
+  background-color: wheat;
+  padding: 40px 40px 40px 60px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.secondary .recent_project .category {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  position: absolute;
+}
+section.main .project_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.main .project_list .project{
+  width: 47%;
+}
+section.main .project_list .project span{
+  margin-top: 15px;
+}
+section.main {
+  width: 65%;
+  margin-left: 90px;
+  margin-right: 20px;
+}
+section.secondary{
+  width: 27%;
+  padding-top: 0px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  background-color: transparent;
+}
+section.secondary .chart,
+section.secondary .recent_project{
+  width: 100%;
+  border-radius: 10px;
+
+}

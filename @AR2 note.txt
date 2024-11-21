@@ -1,0 +1,70 @@
+Comment
+// @AR2, start
+// @AR2, end
+<!-- @AR2, start -->
+<!-- @AR2, end -->
+
+Flow
+1. Project page: buat project
+2. Schedule page -> Project Description
+   - view project names
+   - insert/edit data Employee Table (project_machines)
+   - insert/edit data Machine Table (project_workforces)
+3. Utility page: view data
+   - Employee Table (project_machines)
+   - Machine Table (project_workforces)
+
+   kolom
+   - No
+   - Name: Project
+   - Name: Machine/Workforce
+   - Date
+   - Task
+
+-------------------
+
+table baru
+
+project_machines
+- id
+- project_id
+- machine_id
+- date
+- task
+
+project_workforces
+- id
+- project_id
+- workforce_id
+- date
+- task
+
+-------------------
+
+File baru
+- app\Http\Controllers\ProjectMachineController.php
+- app\Http\Controllers\ProjectWorkforceController.php
+- app\Http\Controllers\ScheduleController.php
+
+- app\Models\ProjectMachine.php
+- app\Models\ProjectWorkforce.php
+
+- database\migrations\2025_07_01_000000_create_project_machines_table.php
+- database\migrations\2025_07_01_000001_create_project_workforces_table.php
+- database\seeders\ProjectMachineSeeder.php
+- database\seeders\ProjectWorkforceSeeder.php
+
+File diupdate
+- app\Http\Controllers\ProjectController.php
+- app\Models\Project.php
+
+- database\seeders\DatabaseSeeder.php
+
+- public\js\scheduleScript.js
+- public\js\utilityScript.js
+
+- resources\views\schedule.blade.php
+- resources\views\utility.blade.php
+
+- routes\api.php
+- routes\web.php
